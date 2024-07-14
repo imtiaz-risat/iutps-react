@@ -1,0 +1,165 @@
+.cards-section {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.events-title {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#cards-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px; /* Maximum width for cards */
+  height: 250px; /* Fixed height for all cards */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.4s;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all ease 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 10deg);
+}
+
+.overlay h4 {
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+  white-space: nowrap;
+  margin: 0 0 10px 0;
+}
+
+.overlay p {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .events-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .card {
+    max-width: 350px;
+    height: 300px;
+  }
+
+  .overlay h4 {
+    font-size: 18px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  #cards-holder {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .events-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+    max-width: 400px;
+    height: 300px;
+  }
+
+  .overlay h4 {
+    font-size: 18px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .events-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    width: calc(33.333% - 20px);
+    max-width: 400px;
+    height: 300px;
+    margin: 10px;
+  }
+
+  .overlay h4 {
+    font-size: 20px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .events-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    width: calc(25% - 20px);
+    max-width: 300px;
+    height: 400px;
+  }
+
+  .overlay h4 {
+    font-size: 22px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+}

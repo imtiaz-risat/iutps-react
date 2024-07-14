@@ -1,0 +1,72 @@
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  /* opacity: 0.5; */
+}
+
+#main {
+  position: relative;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+#page1 {
+  height: 85vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+}
+
+#page1 h1 {
+  font-size: 45px;
+  font-weight: 1000;
+  position: relative;
+}
+
+#page1 h1::before {
+  content: "SEE. SHOOT. PS.";
+  position: absolute;
+  color: black;
+  top: -4px;
+  left: -4px;
+  -webkit-text-stroke: 1px #95c11e;
+  z-index: -1;
+}
+
+#page1 h2 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 0 20px 0;
+}
+
+#page1 p {
+  font-size: 14px;
+  font-weight: 100;
+  width: 80%;
+}
+
+#page1 .green-text {
+  color: #95c11e;
+}
+
+@media (min-width: 768px) {
+  #page1 h1 {
+    font-size: 85px;
+  }
+
+  #page1 h2 {
+    font-size: 22px;
+  }
+
+  #page1 p {
+    font-size: 15px;
+    width: 40%;
+  }
+}
