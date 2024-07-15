@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 const App = () => (
-  <div>
+  <div className="overflow-x-hidden">
     <Navbar />
     <Cursor />
     <MainPage />

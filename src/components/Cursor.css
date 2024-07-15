@@ -4,7 +4,10 @@
   background-color: #95c11e;
   border-radius: 50%;
   position: fixed;
-  z-index: 99;
+  z-index: 11;
+  pointer-events: none;
+  transition: ease;
+  transition-duration: 750ms;
 }
 
 #cursor-blur {
@@ -12,7 +15,8 @@
   width: 350px;
   position: fixed;
   border-radius: 50%;
-  z-index: 9;
+  z-index: 1;
+  pointer-events: none;
   background: radial-gradient(
     circle,
     rgba(150, 193, 30, 1) 0%,

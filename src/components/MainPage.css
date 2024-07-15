@@ -9,7 +9,7 @@ video {
 
 #main {
   position: relative;
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #page1 {
@@ -21,7 +21,7 @@ video {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0px;
+  padding: 10px;
 }
 
 #page1 h1 {

@@ -1,44 +1,29 @@
-.cards-section {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 40px 20px;
-  text-align: center;
-}
+/* #cards-holder { */
+/* display: flex; */
+/* flex-direction: column; */
+/* gap: 20px; */
+/* position: relative; */
+/* z-index: 10; */
+/* } */
 
-.events-title {
-  font-size: 36px;
-  font-weight: 900;
-  margin-bottom: 30px;
-  color: white;
-}
+/* .card {
+  /* width: 100%; */
+/* max-width: 400px; Maximum width for cards */
+/* height: 250px; Fixed height for all cards */
+/* border-radius: 20px; */
+/* background-size: cover; */
+/* background-position: center; */
+/* overflow: hidden; */
+/* transition: transform 0.4s; */
+/* position: relative; */
+/* }  */
 
-#cards-holder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  position: relative;
-  z-index: 10;
-}
-
-.card {
-  width: 100%;
-  max-width: 400px; /* Maximum width for cards */
-  height: 250px; /* Fixed height for all cards */
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  transition: transform 0.4s;
-  position: relative;
-}
-
-.overlay {
+/* .overlay {
   height: 100%;
   width: 100%;
   background-color: #95c11e;
-  padding: 20px;
-  box-sizing: border-box;
+  /* padding: 20px; */
+/* box-sizing: border-box;
   opacity: 0;
   transition: all ease 0.4s;
   position: absolute;
@@ -47,12 +32,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; */
+/* } */
 
-.card:hover .overlay {
+/* .card:hover .overlay {
   opacity: 1;
-}
+} */
 
 .card:hover {
   transform: rotate3d(-1, 1, 0, 10deg);

@@ -1,29 +1,23 @@
 import React from "react";
-import "./AboutUs.css";
 
 const AboutUs = () => (
-  <div id="about-us">
-    {/* <img
-      src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-1.jpg?strip=all&amp;lossy=1&amp;sharp=1&amp;fit=300%2C200&amp;ssl=1"
-      alt=""
-    /> */}
-    <div id="about-us-texts">
-      <h3>ABOUT US</h3>
-      <p>
+  <div
+    id="about-us"
+    className="flex flex-col items-center justify-evenly text-center p-4 md:flex-row md:pt-12 md:pb-24 mb:pt-24 bg-black relative z-10 scroll-mt-20"
+  >
+    <div id="about-us-texts" className="text-center md:w-1/2 md:text-left">
+      <h3 className="text-3xl text-center font-black my-5 md:my-6">ABOUT US</h3>
+      <p className="text-sm leading-6 font-light my-4 md:text-base md:leading-8 md:my-6">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, officia
         est odio aperiam reiciendis cupiditate ipsa illum ipsam magnam nulla
         quod provident, omnis repellendus quo cumque quae esse. Voluptatum
         laborum rerum tenetur quibusdam exercitationem nisi.
       </p>
-      <p>
+      <p className="text-sm leading-6 font-light my-4 md:text-base md:leading-8 md:my-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
         perferendis magni ratione unde reprehenderit voluptates. Ut.
       </p>
     </div>
-    {/* <img
-      src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-2.jpg?strip=all&amp;lossy=1&amp;sharp=1&amp;fit=300%2C200&amp;ssl=1"
-      alt=""
-    /> */}
   </div>
 );
 
